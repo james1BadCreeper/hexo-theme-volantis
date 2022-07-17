@@ -1,0 +1,35 @@
+// 禁止选中和自动选中
+.not-select,
+figcaption,
+details summary,
+.new-meta-box,
+.nav-tabs
+  -webkit-touch-callout none
+  -webkit-user-select none
+  -khtml-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+.allow-select
+  -webkit-touch-callout all
+  -webkit-user-select all
+  -khtml-user-select all
+  -moz-user-select all
+  -ms-user-select all
+  user-select all
+
+// fand-in, fade-out
+.content-in
+  animation: content-fadeIn
+  animation-duration: 1s
+.content-out
+  animation: content-fadeOut
+  animation-duration: 1s
+@keyframes content-fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes content-fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
