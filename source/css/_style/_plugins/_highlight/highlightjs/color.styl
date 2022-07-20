@@ -7,6 +7,29 @@ $hl-red = #EE2B29
 $hl-orange = #FB3F1B
 $hl-amber = #FD8607
 $hl-text = alpha($color-text, .9)
+
+// for cpp: Chinolor
+.highlight.cpp
+  .keyword
+    color: #12AA9C !important
+  .type
+    color: #CC5595
+  .built_in, .title
+    color: #1781B5
+  .number
+    color: #FC6315
+  .line
+    .meta
+      color: #12AA9C
+    .meta-string,.string
+      color: #B78D12
+    .class
+      color: $hl-text
+      .title
+        color: $hl-blue
+    .comment
+      color: #A4ACA7
+
 .highlight pre
   // 行
   .line,.params
