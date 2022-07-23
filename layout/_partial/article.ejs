@@ -9,6 +9,33 @@
   </span>
   <%- partial('meta', {post: post, position: 'top'}) %>
   <div id="layoutHelper-page-plugins"></div>
+  <% if (page.status) { %>
+    <% if (page.status == "done" && page.group == 'notes') { %>
+      <div class="note done">
+        <p>本文已经更新完毕，若有错误或需要补充的内容请在评论区留言。</p>
+      </div>
+    <% } %>
+    <% if (page.status == "done" && page.group != 'notes') { %>
+      <div class="note done">
+        <p>本文已经更新完毕，若有错误请在评论区留言。</p>
+      </div>
+    <% } %>
+    <% if (page.status == "working") { %>
+      <div class="note alien-monster blue">
+        <p>本文正在施工中，有缺失的内容请谅解。</p>
+      </div>
+    <% } %>
+    <% if (page.status == "dark") { %>
+      <div class="note face-sad-tear gray">
+        <p>本文为作者的黑历史，请勿喷。</p>
+      </div>
+    <% } %>
+    <% if (page.status == "future") { %>
+      <div class="note jet-fighter-up cyan">
+        <p>本文大体已更新完毕，一些小内容将在未来进行补充。</p>
+      </div>
+    <% } %>
+  <% } %>
   <div id="post-body" itemprop="articleBody">
     <%- post.content %>
   </div>
