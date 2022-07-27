@@ -2,13 +2,12 @@
   // https://www.micdz.cn/article/katex-on-volantis/
   if (typeof renderMathInElement == "undefined") {
     volantis.css("<%= theme.plugins.katex.css %>")
-    volantis.css("<%= theme.plugins.katex.copytex.css %>")
     function pjax_katex() {
       volantis.js("<%= theme.plugins.katex.render %>").then(()=>{
         renderMathInElement(document.body);
       })
     }
-    volantis.js("<%= theme.plugins.katex.copytex.js %>")
+    volantis.js("<%= theme.plugins.katex.copytex %>")
     volantis.js("<%= theme.plugins.katex.js %>").then(pjax_katex)
     volantis.pjax.push(pjax_katex)
   }
