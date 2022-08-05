@@ -37,19 +37,19 @@ ul.list-v.rightmenu
 
 // header locked
 .l_header
-  if hexo-config('custom_css.navbar.max_width') == 'max'
-    left: 0 !important
-    border-radius: 0 !important
-    max-width: 100% !important
-  else
-    max-width: $layout-width+3*$gap !important
-    left: "calc((100% - %s) * 0.5)" % @max-width !important
-    border-bottom-left-radius: $border-card !important
-    border-bottom-right-radius: $border-card !important
-    @media screen and (max-width: $layout-width + 2 * $gap)
-      left: 0 !important
-      border-radius: 0 !important
-      max-width: 100% !important
+  //if hexo-config('custom_css.navbar.max_width') == 'max'
+  left: 0 !important
+  border-radius: 0 !important
+  max-width: 100% !important
+  //else
+  //  max-width: $layout-width+3*$gap !important
+  //  left: "calc((100% - %s) * 0.5)" % @max-width !important
+  //  border-bottom-left-radius: $border-card !important
+  //  border-bottom-right-radius: $border-card !important
+  //  @media screen and (max-width: $layout-width + 2 * $gap)
+  //    left: 0 !important
+  //    border-radius: 0 !important
+  //    max-width: 100% !important
 
 // body locked
 #l_main

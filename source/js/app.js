@@ -43,7 +43,7 @@ Object.freeze(locationHash);
 /* Main */
 const VolantisApp = (() => {
   const fn = {},
-    COPYHTML = '<button class="btn-copy" data-clipboard-snippet=""><i class="fad fa-copy EMERALD"></i><span>COPY</span></button>';
+    COPYHTML = '<button class="btn-copy" data-clipboard-snippet=""><i class="fa-duotone fa-copy EMERALD"></i><span>COPY</span></button>';
   let scrollCorrection = 80;
 
   fn.init = () => {
@@ -383,7 +383,7 @@ const VolantisApp = (() => {
         let targetID = decodeURI(e.target.hash.split('#')[1]).replace(/\ /g, '-');
         let target = document.getElementById(targetID);
         if (target) {
-          volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'instant' })
+          volantis.scroll.to(target, { addTop: - volantis.dom.header.offsetHeight - 5, behavior: 'smooth' })
         }
       });
     })
