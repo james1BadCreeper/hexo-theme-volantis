@@ -9,7 +9,7 @@
   </span>
   <%
   let showPin = false;
-  if (post.pin && (post.title || theme.article.preview.auto_title) && theme.article.preview.pin_icon) {
+  if ((post.pin || post.sticky > 100) && (post.title || theme.article.preview.auto_title) && theme.article.preview.pin_icon) {
     showPin = true;
   }
   let showTitle = false;
