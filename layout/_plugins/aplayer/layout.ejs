@@ -5,12 +5,13 @@ let aplayer = theme.plugins.aplayer;
   <% if (post && post.music) { %>
     <meting-js
       mini='true'
-      volume='<%- post.music.volume || aplayer.volume %>'
-      loop='<%- post.music.loop || aplayer.loop %>'
-      order='<%- post.music.order || aplayer.order %>'
-      server='<%- post.music.server || aplayer.server %>'
-      type='<%- post.music.type || aplayer.type %>'
-      id='<%- post.music.id || aplayer.id %>'>
+      autoplay='<%- post.music.autoplay %>'
+      volume='<%- aplayer.volume %>'
+      loop='<%- post.music.loop %>'
+      order='<%- post.music.order %>'
+      server='<%- post.music.server  %>'
+      type='<%- post.music.type  %>'
+      id='<%- post.music.id  %>'>
     </meting-js>
   <% } else { %>
     <meting-js

@@ -10,4 +10,8 @@ if (aid && site.data && site.data.author && (aid in site.data.author)) {
     <img itemprop="image" src="<%- author.avatar %>">
     <p itemprop="name"><%- author.name %></p>
   </a>
+  <% if (author.tag) { %>
+    &nbsp;
+    <span class="am-badge"><%- author.tag %></span>
+  <% } %>
 </div>
