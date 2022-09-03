@@ -817,13 +817,6 @@ plugins:
   # APlayer config: https://github.com/metowolf/MetingJS
   aplayer:
     enable: #true
-<<<<<<< HEAD
-    js:
-      aplayer: volantis-static/libs/aplayer/dist/APlayer.min.js # https://unpkg.com/aplayer@1.10/dist/APlayer.min.js
-      meting: volantis-static/libs/meting/dist/Meting.min.js # https://unpkg.com/meting@2.0/dist/Meting.min.js
-    css: /libs/aplayer.min.css #volantis-static/libs/aplayer/dist/APlayer.min.css # https://unpkg.com/aplayer@1.10/dist/APlayer.min.css
-=======
->>>>>>> 25ca7f6575f6ede1d00955290b9c285b2a1e0374
     # Required
     server: netease   # netease, tencent, kugou, xiami, baidu
     type: playlist    # song, playlist, album, search, artist
