@@ -39,7 +39,7 @@ cdn_system:
   system_config:
     # 自定义配置 使用 "theme/_cdn.yml" 中的名称作为配置项的键
     custom:
-      busuanzi: https://cdn.dusays.com/bsz.js  # 杜老师友情赞助
+      busuanzi: https://npm.elemecdn.com/penndu@1.0.0/bsz.js  # 杜老师友情赞助
       #volantis_style: /css/style.css
       #volantis_app: /js/app.js
 
@@ -939,8 +939,12 @@ plugins:
   fcircle:
     # Set `plugins: ["fcircle"]` to enable in front-matter
     # 支持 Pjax
-    api: https://fcircle-api.example.com/ # api 地址
-    message: 与主机通讯中……  # 占位文字
+    private_api_url: https://fcircle-api.example.com/ # api 地址
+    page_turning_number: 10  # 点击加载更多时，一次最多加载几篇文章，默认10
+    error_img: https://cravatar.cn/avatar/57d8260dfb55501c37dde588e7c3852c # 头像加载失败时，默认头像地址
+    sort_rule: created # 进入页面时第一次的排序规则,可选值：created/updated
+    app: https://npm.elemecdn.com/fcircle-theme-yyyz@1.0.5/dist/app.min.js # app.min.js的url
+    bundle: https://npm.elemecdn.com/fcircle-theme-yyyz@1.0.5/dist/bundle.js # bundle.js的url
 
   # 消息提示 
   # izitoast
